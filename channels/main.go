@@ -38,7 +38,7 @@ func main() {
 	// Communication over an unbuffered channel causes the sending and receiving goroutines to synchronize
 	// because of this, unbuffered channels are sometimes called synchronous channels
 
-	conn, err := net.Dial("tcp", "localhost:7000")
+	conn, err := net.Dial("tcp", "localhost:8000")
 	if err != nil {
 		log.Fatal(err)
 	}
